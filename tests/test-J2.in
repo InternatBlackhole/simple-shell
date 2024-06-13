@@ -1,0 +1,22 @@
+# Zagon notranjih ukazov v ozadju
+
+proc /home/test/tests/proc-demo
+status
+
+echo "Zacetek"
+pids
+echo "Konec"
+
+echo
+
+echo "Zacetek"
+pids &
+waitall
+echo "Konec"
+
+echo
+
+echo "Zacetek"
+pids &
+echo "Konec"
+waitall

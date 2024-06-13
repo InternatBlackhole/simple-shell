@@ -1,0 +1,19 @@
+# Zagon zunanjih ukazov v ozadju
+
+echo "Zacetek"
+dd if=/dev/urandom of=/dev/null bs=1k count=2k status=noxfer
+echo "Konec"
+
+echo
+
+echo "Zacetek"
+dd if=/dev/urandom of=/dev/null bs=1k count=2k status=noxfer &
+waitall
+echo "Konec"
+
+echo
+
+echo "Zacetek"
+dd if=/dev/urandom of=/dev/null bs=1k count=2k status=noxfer &
+echo "Konec"
+waitall

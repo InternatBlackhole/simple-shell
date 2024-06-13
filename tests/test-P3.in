@@ -1,0 +1,26 @@
+# Cevovodi in preusmerjanja
+
+dirmake test
+dirchange test
+dirbase
+
+pipes "cpcat /etc/passwd" "head -8" "wc -l" >count.txt
+
+pipes "echo 01234567890123456789" "rev" "cpcat - digits.txt"
+
+pipes "cat digits.txt" "tr 13579 abcde" "rev" >revdigits.txt
+
+pipes "cut -d: -f7" "sort" "uniq -c" "sort -nr" "head -2" </etc/passwd >shells.txt
+
+cpcat count.txt
+cpcat digits.txt
+cpcat revdigits.txt
+cpcat shells.txt
+
+unlink count.txt
+unlink digits.txt
+unlink revdigits.txt
+unlink shells.txt
+
+dirchange ..
+dirremove test

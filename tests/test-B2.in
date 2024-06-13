@@ -1,0 +1,28 @@
+# Osnovno delo z imeniki
+
+dirmake test
+status
+dirchange test
+status
+dirbase
+
+echo Ustvarjanje imenikov
+dirmake 1
+dirmake 2
+dirmake 3
+dirlist
+
+echo Preimenovanje imenikov
+rename 1 a
+rename 2 "b b"
+rename "b b" b
+rename 3 c
+dirlist
+
+echo Odstranjevanje imenikov
+dirremove a
+dirremove b
+dirremove c
+
+dirchange ..
+dirremove test

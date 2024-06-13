@@ -1,0 +1,13 @@
+# Preprosti dvostopenjski cevovodi
+
+pipes "/bin/echo 01234567890123456789" "cat"
+status
+
+pipes "echo 01234567890123456789" "rev"
+status
+
+pipes "cat /etc/passwd" "wc -l"
+status
+
+pipes "cpcat /etc/passwd" "wc -l"
+status

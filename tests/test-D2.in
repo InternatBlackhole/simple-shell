@@ -1,0 +1,12 @@
+# Ukaz pids
+
+proc /home/test/tests/proc-demo
+status
+pids
+status
+echo
+pids
+status
+echo
+pids
+status

@@ -1,0 +1,29 @@
+# Ukaz linklist
+
+dirmake test
+dirchange test
+dirbase
+
+cp /etc/hostname hostname
+cp /etc/fstab fstab
+
+linkhard hostname h
+linkhard h hh
+
+linkhard fstab f
+linkhard f ff
+linkhard f fff
+
+linklist h
+linklist f
+
+unlink hostname
+unlink fstab
+unlink h
+unlink hh
+unlink f
+unlink ff
+unlink fff
+
+dirchange ..
+dirremove test

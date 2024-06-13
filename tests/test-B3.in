@@ -1,0 +1,31 @@
+# Delo s povezavami
+
+dirmake test
+dirchange test
+dirbase
+
+touch original
+linkhard original trdi
+linkhard trdi dvojno_trdi
+ln dvojno_trdi trojno_trdi
+
+linksoft /etc/passwd gesla
+ln -s gesla sifre
+linksoft null/nil/None void
+
+dirlist
+linkread gesla
+linkread sifre
+linkread void
+
+unlink trdi
+rm dvojno_trdi
+unlink trojno_trdi
+unlink gesla
+unlink sifre
+unlink original
+rm void
+
+dirlist
+dirchange ..
+dirremove test

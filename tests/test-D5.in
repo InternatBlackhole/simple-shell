@@ -1,0 +1,50 @@
+# Razno
+
+dirmake test
+dirchange test
+dirbase
+
+touch Ajka
+touch Bruno
+
+linkhard Ajka a
+linkhard Bruno b
+
+linkhard a "a a"
+linkhard b "b b"
+
+linkhard "a a" "a a a"
+linkhard "b b" "b b b"
+
+linklist a
+linklist b
+
+unlink a
+unlink b
+unlink "a a"
+unlink "b b"
+unlink "a a a"
+unlink "b b b"
+unlink Ajka
+unlink Bruno
+
+
+proc /home/test/tests/proc-demo
+pids
+
+
+dirmake the
+touch the/sky
+linksoft the/sky "the/blue sky"
+dirlist the
+
+unlink the/sky
+linkread "the/blue sky"
+rename "the/blue sky" "the/gray sky"
+dirlist the
+
+rm "the/gray sky"
+dirremove the
+
+dirchange ..
+dirremove test

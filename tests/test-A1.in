@@ -1,0 +1,16 @@
+# Osnovni test delovanja
+
+print OS:
+print Operacijski sistemi
+echo
+
+echo OS je super!
+
+# presledki v naslednji vrstici
+
+
+    # komentar sredi vrstice
+
+echo Komentar # komentar
+
+exit 16

@@ -1,0 +1,9 @@
+# Ukaz pinfo
+
+proc /home/test/tests/proc-demo
+status
+pinfo
+status
+echo
+pinfo
+status

@@ -1,0 +1,37 @@
+# Mešani osnovni ukazi
+
+dirmake test
+dirchange test
+dirbase
+
+print Testiramo "delovanje lupine: "
+print 1         2          3
+echo
+
+dirmake "fork exec"
+dirchange "fork exec"
+dirbase
+
+name hokuspokus
+status
+name
+status
+
+dirchange ..
+dirremove "fork exec"
+
+proc /home/test/tests/proc-demo
+pids
+
+cut -d: -f7 /etc/passwd
+
+cpcat /etc/hostname hostname
+
+linksoft "going nowhere" gn
+linkread gn
+
+unlink hostname
+unlink gn
+
+dirchange ..
+dirremove test

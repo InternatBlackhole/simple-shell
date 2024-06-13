@@ -1,0 +1,39 @@
+# Test name, proc & status
+
+name
+status
+name lupina
+status
+name
+status
+name sh
+status
+name
+status
+name "my sh"
+status
+name
+status
+name Abrakadabra
+status
+name
+status
+
+echo
+
+proc
+status
+proc .
+status
+proc
+status
+proc /
+status
+proc
+status
+proc nowhere
+status
+proc
+status
+
+exit 39
